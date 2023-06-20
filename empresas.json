@@ -1,10 +1,12 @@
 {
-  "empresas":[
+  "empresas": [
     {
       "id": 1,
-      "nome": "Amazon",
+      "name": "Amazon",
       "email": "amazon@gmail.com",
       "endereco": "Estados Unidos"
     }
+
+
   ]
 }

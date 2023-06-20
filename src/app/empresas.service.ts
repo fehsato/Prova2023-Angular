@@ -22,7 +22,9 @@ cadastrar(empresa: Empresas): Observable<Empresas> {
 update(empresa: Empresas): Observable<Empresas> {
   return this.http.put<Empresas>(`${this.url}/${empresa.id}`,empresa);
 }
-
+remove(empresa: Empresas): Observable<void> {
+    return this.http.delete<void>(`${this.url}/${empresa.id}`);
+  }
 
 
 }

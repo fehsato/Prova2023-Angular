@@ -60,6 +60,16 @@ export class EmpresasComponent implements OnInit{
       }
   }
 
+  remove(empresa: Empresas): void {
+    this.empresasService.remove(empresa).subscribe({
+       next: () => this.loadEmpresas()
+    });
+ }
+
+ edit(empresa: Empresas): void {
+   this.formGroupEmpresas.setValue(empresa);
+   this.isEditing = true;
+ }
 
 
 }
